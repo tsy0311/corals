@@ -1,4 +1,7 @@
 Pillow>=10.0.0
-pyinstaller>=4.0.0
+# Note: PyInstaller 4.5.1 may not work with Python 3.12+
+# For Python 3.12+, consider using PyInstaller 6.0+ or building manually
+# The application runs fine without PyInstaller - it's only needed for .exe creation
+pyinstaller>=4.0.0; python_version<"3.12"
 openai>=1.0.0
 
